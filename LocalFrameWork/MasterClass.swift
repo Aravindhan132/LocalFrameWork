@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+
+public class MasterClass {
+    private init() {}
+    
+    public static func localfunction() -> String{
+        return "Done Framework"
+    }
+}
+

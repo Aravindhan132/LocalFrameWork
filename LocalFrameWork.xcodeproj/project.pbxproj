@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4701124B229702CD00041156 /* LocalFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47011241229702CD00041156 /* LocalFrameWork.framework */; };
-		47011250229702CD00041156 /* LocalFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701124F229702CD00041156 /* LocalFrameWorkTests.swift */; };
 		47011252229702CD00041156 /* LocalFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 47011244229702CD00041156 /* LocalFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4701125C2297032A00041156 /* MasterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701125B2297032A00041156 /* MasterClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +27,7 @@
 		47011244229702CD00041156 /* LocalFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalFrameWork.h; sourceTree = "<group>"; };
 		47011245229702CD00041156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4701124A229702CD00041156 /* LocalFrameWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalFrameWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4701124F229702CD00041156 /* LocalFrameWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFrameWorkTests.swift; sourceTree = "<group>"; };
-		47011251229702CD00041156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4701125B2297032A00041156 /* MasterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +52,8 @@
 		47011237229702CD00041156 = {
 			isa = PBXGroup;
 			children = (
+				4701125B2297032A00041156 /* MasterClass.swift */,
 				47011243229702CD00041156 /* LocalFrameWork */,
-				4701124E229702CD00041156 /* LocalFrameWorkTests */,
 				47011242229702CD00041156 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,15 +74,6 @@
 				47011245229702CD00041156 /* Info.plist */,
 			);
 			path = LocalFrameWork;
-			sourceTree = "<group>";
-		};
-		4701124E229702CD00041156 /* LocalFrameWorkTests */ = {
-			isa = PBXGroup;
-			children = (
-				4701124F229702CD00041156 /* LocalFrameWorkTests.swift */,
-				47011251229702CD00041156 /* Info.plist */,
-			);
-			path = LocalFrameWorkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +138,7 @@
 				TargetAttributes = {
 					47011240229702CD00041156 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					47011249229702CD00041156 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4701125C2297032A00041156 /* MasterClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +193,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47011250229702CD00041156 /* LocalFrameWorkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,9 +332,11 @@
 		47011256229702CD00041156 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 54HSWPSU32;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -354,9 +347,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Zoho.LocalFrameWork;
+				PRODUCT_BUNDLE_IDENTIFIER = aravind.LocalFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,9 +359,11 @@
 		47011257229702CD00041156 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 54HSWPSU32;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -378,7 +374,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Zoho.LocalFrameWork;
+				PRODUCT_BUNDLE_IDENTIFIER = aravind.LocalFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -389,6 +385,7 @@
 		47011259229702CD00041156 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LocalFrameWorkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +403,7 @@
 		4701125A229702CD00041156 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LocalFrameWorkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
